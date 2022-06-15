@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/urun_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="5dp"
+        app:contentPadding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/urun_imageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:cropToPadding="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_bim_logo"
+                />
+
+            <TextView
+                android:id="@+id/urun_baslik_textView"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="23sp"
+                android:elevation="5dp"
+                android:text="Hp Notebook 16''"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/urun_aciklama_textView"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="18sp"
+                android:elevation="5dp"
+                android:text="• 15,6”” HD SVA BrightView WLED (1366 x 768)
+• AMD A9-9420, Çift Çekirdekli (3-3,6 GHz, 1MB önbellek)
+• 4 GB DDR4-1866 SDRAM (1 x 4 GB)
+• Tümleşik AMD Radeon™ R5 Grafik Kartı
+• 256 GB M.2 SSD
+• 802.11b/g/n (1x1) Wi-Fi®/ Bluetooth® 4.0/Miracast
+• Tümleşik dijital mikrofonlu HP Web Kamerası"
+                android:textStyle="normal"
+                />
+            <TextView
+                android:id="@+id/urun_gelme_tarihi_textView"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="18sp"
+                android:elevation="5dp"
+                android:text="• Bu ürün 20 Mart 2020 tarihinde mağazada olacaktır."
+                android:textStyle="normal"
+                />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:contentPadding="3dp"
+                    app:contentPaddingLeft="7dp"
+                    app:contentPaddingRight="7dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    android:layout_gravity="start"
+                    android:layout_margin="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/urun_fiyat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1600.00 Tl"
+                        android:textSize="20sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/colorWhite"
+                        android:padding="8dp"
+                        android:background="@color/colorPrimary"
+                        android:textStyle="bold"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/urun_fab_fav_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:backgroundTint="@color/colorAccent"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:fabSize="normal"
+                        app:maxImageSize="40dp"
+                        app:srcCompat="@drawable/ic_favorite_white"
+                        android:layout_gravity="end"
+                        android:layout_margin="12dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Aktüel Ürünler</string>
+    <string name="title_home">Marketler</string>
+    <string name="title_dashboard">Tüm Ürünler</string>
+    <string name="title_notifications">Favorilerim</string>
+    <string name="product">Ürünler</string>
+</resources>

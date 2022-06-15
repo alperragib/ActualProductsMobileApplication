@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/toolbar_app_paylas"
+        android:title="Uygulamayı Paylaş" />
+    <item
+        android:id="@+id/toolbar_app_degerlendir"
+        android:title="Uygulamayı Değerlendir" />
+    <item
+        android:id="@+id/toolbar_info"
+        android:title="Kullanım Şartları" />
+    <item
+        android:id="@+id/toolbar_gorus"
+        android:title="Görüşlerini Bize İlet" />
+</menu>
